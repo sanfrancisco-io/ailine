@@ -1,0 +1,137 @@
+.wrapper {
+  padding: 100px 0;
+  //background-color: #eff7f9;
+  background: url("../../assets/jpg/service-bg-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    h2 {
+      font-size: 35px;
+    }
+
+    .typography {
+      padding-left: 20px;
+      border-left: 10px solid #ffc501;
+      display: flex;
+      align-items: center;
+
+      p {
+        font-size: 20px;
+        color: #999;
+      }
+    }
+  }
+
+  .slider {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0;
+    .item {
+      width: 345px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      .upper {
+        width: 345px;
+        height: 249px;
+      }
+
+      .lower {
+        width: 80%;
+        height: 50%;
+        border-bottom: 5px solid #ffc501;
+        background-color: #fff;
+        text-align: center;
+        position: relative;
+        top: -30px;
+        padding: 20px 10px;
+        transition: background-color 0.5s;
+
+        .circle {
+          width: 73px;
+          height: 73px;
+          -webkit-box-shadow: -4px 6px 15px 7px rgba(0, 0, 0, 0.59);
+          box-shadow: -4px 6px 15px 2px rgba(0, 0, 0, 0.19);
+          border-radius: 50%;
+          background-color: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #ffc501;
+          margin: 0 auto;
+          position: relative;
+          top: -40px;
+          transition: 0.5s;
+        }
+
+        .circle:hover {
+          transition: 0.5s;
+          background-color: #ffc501;
+
+          svg {
+            fill: #fff;
+          }
+        }
+
+        h3 {
+          color: #000;
+          font-size: 25px;
+          transition: 0.5s;
+        }
+
+        h3:hover {
+          transition: 0.5s;
+          color: #fff;
+        }
+
+        p {
+          font-size: 20px;
+          color: #999;
+        }
+      }
+    }
+
+    .item:hover .lower {
+      transition: 0.5s;
+      background-color: #ffc501;
+      color: #fff;
+      p {
+        color: #fff;
+        transition: 0.5s;
+      }
+    }
+  }
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      background-color: #182736;
+      color: #fff;
+      padding: 12px 30px;
+      font-weight: 600;
+      transition: 1s;
+      cursor: pointer;
+    }
+  }
+  .btn a:hover {
+    transition: 1s;
+    background-color: #ffc501;
+  }
+
+  @media screen and (max-width: 860px) {
+    .header {
+      grid-template-columns: 1fr;
+
+      .typography {
+        border: none;
+        border-top: 10px solid #ffc501;
+      }
+    }
+  }
+}

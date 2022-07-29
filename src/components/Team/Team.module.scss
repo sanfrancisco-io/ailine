@@ -1,0 +1,147 @@
+.wrapper {
+  .backgroundBlock {
+    padding: 100px 0;
+    width: 100%;
+    height: 65vh;
+    background: url("../../assets/jpg/team-bg.jpg");
+    background-size: cover;
+
+    .title {
+      color: #fff;
+    }
+
+    .header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      h2 {
+        font-size: 35px;
+        color: #fff;
+      }
+
+      .typography {
+        padding-left: 20px;
+        border-left: 10px solid #ffc501;
+        display: flex;
+        align-items: center;
+
+        p {
+          font-size: 20px;
+          color: #fff;
+        }
+      }
+    }
+
+    @media screen and (max-width: 860px) {
+      height: auto;
+
+      .header {
+        grid-template-columns: 1fr;
+
+        .typography {
+          border: none;
+          border-top: 10px solid #ffc501;
+        }
+      }
+    }
+  }
+  .sliderBlock {
+    position: relative;
+    top: -150px;
+    .mySwiper {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 50px 0;
+      .item {
+        width: 345px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+
+        .upper {
+          width: 345px;
+          height: 350px;
+          background: #e6e8e7;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+
+          .socials {
+            width: 30px;
+            display: flex;
+            row-gap: 10px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            position: absolute;
+            top: -100%;
+            right: 10%;
+            z-index: 11;
+            background-color: #fff;
+            border-radius: 8px;
+            transition: 1.5s;
+          }
+          .greenBackground {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            width: 0%;
+            height: 100%;
+            background-color: #ffc501;
+            opacity: 0.5;
+            z-index: 10;
+            transition: 1s;
+          }
+        }
+
+        .lower {
+          width: 80%;
+          height: 50%;
+          border-bottom: 5px solid #ffc501;
+          background-color: #fff;
+          text-align: center;
+          position: relative;
+          top: -30px;
+          padding: 20px 0;
+          transition: background-color 0.5s;
+          z-index: 11;
+
+          h3 {
+            color: #000;
+            font-size: 25px;
+            transition: 0.5s;
+          }
+
+          h3:hover {
+            transition: 0.5s;
+            color: #fff;
+          }
+
+          p {
+            font-size: 20px;
+            color: #999;
+          }
+        }
+
+        &:hover {
+          .greenBackground {
+            width: 100%;
+            transition: 1s;
+          }
+          .socials {
+            top: 5%;
+            transition: 1.5s;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 1290px) {
+      top: 50px;
+    }
+  }
+}

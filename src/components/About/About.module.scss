@@ -1,0 +1,146 @@
+.aboutWrapper {
+  position: relative;
+  margin-bottom: 100px;
+  .blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    z-index: 10;
+    position: relative;
+    top: -40px;
+
+    .block {
+      background: #fff;
+      padding: 20px;
+      transition: 0.5s;
+      -webkit-box-shadow: -4px 6px 15px 7px rgba(0, 0, 0, 0.59);
+      box-shadow: -4px 6px 15px 2px rgba(0, 0, 0, 0.19);
+
+      .blockHeader {
+        display: flex;
+
+        h4 {
+          font-size: 30px;
+        }
+
+        p {
+          font-size: 17px;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .block:hover {
+      transition: 0.5s;
+      background: #ffc501;
+      color: #fff;
+    }
+
+    .blockCenter {
+      background: #ffc501;
+
+      * {
+        color: #fff;
+      }
+    }
+
+    @media screen and (max-width: 1250px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 848px) {
+      top: 50px;
+    }
+  }
+
+  .aboutBlock {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+
+    .leftBlock {
+      position: relative;
+      span {
+        width: 90% !important;
+      }
+
+      .greenBlock {
+        width: 90%;
+        height: 50%;
+        background: #ffc501;
+        position: absolute;
+        left: 2%;
+        top: -2%;
+      }
+    }
+
+    .rightBlock {
+      h3 {
+        font-size: 20px;
+        color: #232323;
+        margin-bottom: 13px;
+      }
+
+      h2 {
+        line-height: 1.2;
+        font-weight: 700;
+        transition: 0.5s;
+        font-size: 35px;
+        color: #181b1d;
+      }
+
+      p {
+        color: #999;
+        font-family: "Rubik", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 17px;
+        line-height: 1.6;
+      }
+      .blockAbouts {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        margin-top: 20px;
+        .blockAbout {
+          display: flex;
+          align-items: center;
+          column-gap: 20px;
+        }
+      }
+
+      .hr {
+        width: 100%;
+        height: 1px;
+        border-bottom: 1px solid #ddd;
+        margin: 20px 0;
+      }
+
+      .founder {
+        display: flex;
+        align-items: center;
+        .imgBlock {
+          display: flex;
+          align-items: center;
+          column-gap: 20px;
+        }
+
+        .signature {
+          margin-left: auto;
+        }
+      }
+    }
+
+    @media screen and (max-width: 860px) {
+      grid-template-columns: 1fr;
+
+      .leftBlock {
+        .greenBlock {
+          height: 100%;
+        }
+      }
+    }
+  }
+}

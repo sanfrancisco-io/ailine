@@ -1,0 +1,80 @@
+.footer {
+    width: 100%;
+    min-height: 500px;
+    height: auto;
+    background-image: url(../../assets/footer-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 320px;
+    &_inner {
+        width: 85%;
+        height: 70%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @media (max-width: 768px){
+            justify-content: center;
+        }
+        div {
+            @media (max-width: 768px){
+                margin: 20px;
+            }
+            @media (max-width: 425px){
+                margin: 0px;
+            }
+            width: 260px;
+            h2 {
+                color: white;
+                margin-bottom: 28px;
+                margin-top: 28px;
+                @media (max-width: 768px){
+                    text-align: center;
+                }
+            }
+            p{
+                color: white;
+                margin-bottom: 1rem;
+                @media (max-width: 768px){
+                    text-align: center;
+                }
+            }
+            .third_blocks{
+                display: flex;
+                margin-bottom: 15px;
+                height: 50px;
+                @media (max-width: 768px){
+
+                    margin-left: 0px
+                }
+                &_img_block{
+                    min-width: 30px ;
+                    max-width: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                }
+                p{
+                    @media (max-width: 768px){
+                        margin: 0px;
+                    }
+                    margin-left: 15px;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+            }
+            .fourth_inner{
+                display: flex;
+                flex-wrap: wrap;
+                div{
+                    margin: 4px;
+                    width: 30%;
+                }
+            }
+        }
+    }
+}

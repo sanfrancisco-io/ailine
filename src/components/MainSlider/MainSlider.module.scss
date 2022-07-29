@@ -1,0 +1,96 @@
+.swiperBlock {
+  height: 100vh;
+  display: flex;
+  * {
+    box-sizing: border-box;
+  }
+  .swiper {
+    height: 100%;
+
+    img {
+    }
+  }
+
+  .swiperItem {
+    .background {
+      width: 100%;
+      height: 100%;
+      background: url("../../assets/jpg/forSlide2.jpg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      filter: brightness(0.4);
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: -1;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 50px;
+    align-items: flex-start;
+    color: #fff;
+    margin-top: 50px                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ;
+
+    h1 {
+      font-size: 70px;
+      line-height: 20px;
+    }
+
+    a {
+      background-color: #ffc501;
+      color: #fff;
+      padding: 12px 30px;
+      font-weight: 600;
+      transition: 1s;
+    }
+
+    a:hover {
+      transition: 1s;
+      background-color: #182736;
+    }
+  }
+
+  @media screen and (max-width: 1250px) {
+    .content {
+      h1 {
+        font-size: 50px;
+        line-height: 20px;
+      }
+
+      h3 {
+        font-size: 15px;
+      }
+    }
+  }
+  @media screen and (max-width: 860px) {
+    height: 50vh;
+  }
+  @media screen and (max-width: 700px) {
+    .content {
+      justify-content: flex-start;
+      margin-top: 30px;
+      h1 {
+        font-size: 35px;
+      }
+      row-gap: 30px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    height: 30vh;
+    .content {
+      h1 {
+        font-size: 25px;
+      }
+
+      h3 {
+        font-size: 10px;
+      }
+      row-gap: 10px;
+    }
+  }
+}
